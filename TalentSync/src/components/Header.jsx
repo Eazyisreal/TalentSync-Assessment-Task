@@ -11,7 +11,7 @@ export default function Header() {
                 <h1 className="font-inter text-gray900 text-xl font-semibold">ClearLink <span className="text-blueDark400 ">.</span></h1>
             </div>
 
-            <ul className="flex gap-10">
+            <ul className="hidden lg:flex gap-10">
                 <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
                     Products
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
@@ -36,7 +36,7 @@ export default function Header() {
 
             </ul>
 
-            <div className="flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
                 <Button buttonText="Talk to sales" addtionalClassName="font-inter bg-white whitespace-nowrap text-gray900 font-semibold" />
                 <Button buttonText="Sign up for free" addtionalClassName="font-inter whitespace-nowrap text-white font-semibold border-none bg-blue700" />
             </div>
