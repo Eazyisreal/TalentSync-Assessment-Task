@@ -1,6 +1,11 @@
 import Button from "../components/Button"
+import { useState } from "react";
 
 export default function Header() {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
     return (
         <header className=" flex py-4 px-8 justify-between w-full items-center rounded-[6.25rem] bg-gray100 border-gray300">
             <div className="flex items-center gap-[.625rem]">
@@ -40,6 +45,68 @@ export default function Header() {
                 <Button buttonText="Talk to sales" addtionalClassName="font-inter bg-white whitespace-nowrap text-gray900 font-semibold" />
                 <Button buttonText="Sign up for free" addtionalClassName="font-inter whitespace-nowrap text-white font-semibold border-none bg-blue700" />
             </div>
-        </header>
+
+            {isMobileMenuOpen ? (
+                <div className="block lg:hidden" onClick={toggleMobileMenu}>
+                    <span
+                        className={`block h-0.5 w-6 bg-blue700 mb-1 transform transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-1" : ""
+                            }`}
+                    ></span>
+                    <span
+                        className={`block h-0.5 w-6  bg-blue700 mb-1 transform transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-1" : ""
+                            }`}
+                    ></span>
+                </div>
+            ) : (
+                <div className="block lg:hidden"  onClick={toggleMobileMenu}>
+                    <span
+                        className={`block h-0.5 w-6  bg-blue700 mb-1 transform transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-1" : ""
+                            }`}
+                    ></span>
+                    <span
+                        className={`block h-0.5 w-6  bg-blue700 mb-1 transform transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-1" : ""
+                            }`}
+                    ></span>
+                    <span
+                        className={`block h-0.5 w-6  bg-blue700 mb-1 transform transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-1" : ""
+                            }`}
+                    ></span>
+                </div>
+            )}
+
+            {isMobileMenuOpen && (
+                <section className="lg:hidden flex flex-col bg-gray100 absolute w-full left-0 z-10 h-full top-[14.35%]">
+                    <ul className="lg:hidden flex flex-col items-center justify-center py-8 gap-10">
+                        <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
+                            Products
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </l1>
+                        <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
+                            Solutions
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </l1>
+                        <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
+                            Resources
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </l1>
+                        <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
+                            Pricing
+                        </l1>
+
+                    </ul>
+
+                    <div className="lg:hidden flex flex-col justify-center items-center gap-3">
+                        <Button buttonText="Talk to sales" addtionalClassName="font-inter bg-white whitespace-nowrap text-gray900 font-semibold" />
+                        <Button buttonText="Sign up for free" addtionalClassName="font-inter whitespace-nowrap text-white font-semibold border-none bg-blue700" />
+                    </div>
+                </section>
+            )}
+        </header >
     )
 }

@@ -88,7 +88,7 @@ export default function Footer() {
                         <p className="text-gray600 font-inter md:text-[1.125rem] whitespace-nowrap">ClearLink is your gateway to effortless, high- <br />quality video conferencing. Join us in shaping <br /> the future of communication!</p>
                     </div>
 
-                    <div className="grid w-full gap-8 md:grid-cols-2 lg:grid-cols-5">
+                    <div className="grid w-full gap-8 grid-cols-2 lg:grid-cols-5">
                         <Product />
                         <Company />
                         <Resources />

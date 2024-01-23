@@ -36,7 +36,7 @@ export default function Choose() {
                     <p className="text-blue700 font-inter text-[.75rem] md:text-[1.125rem] font-semibold">The ClearLink Advantage</p>
                     <h1 className="text-gray800 text-3xl md:text-5xl font-semibold font-inter">Why choose ClearLink?</h1>
                 </div>
-                <p className="font-inter text-[.75rem]  md:text-xl ">In a world where connection is everything, ClearLink takes the lead. Our <br /> cutting-edge video conferencing app offers:</p>
+                <p className="font-inter text-[.75rem] w-full md:w-3/4 lg:w-3/5 md:text-xl ">In a world where connection is everything, ClearLink takes the lead. Our cutting-edge video conferencing app offers:</p>
                 <img loading="lazy" className=" hidden md:block absolute z-10  left-[61%]" src={handArrow} alt="" />
             </div>
 
