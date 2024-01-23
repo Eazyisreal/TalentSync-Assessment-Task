@@ -23,7 +23,7 @@ export default function SocialProof() {
                     <h1 className="text-gray600 text-center font-inter text-[.75rem] md:text-xl font-medium">Join 1,500+ companies already video conferencing the ClearLink way</h1>
                     <div className="flex md:items-center w-full gap-4 md:gap-[4.3125rem]">
                     {logo.map((item) => (
-                            <img loading="lazy" className=" w-10 md:w-[2.5rem] lg:w-[7rem]"  key={item} src={item.image} alt={`${item}'s logo` }/>
+                            <img loading="lazy" className=" w-[2.8rem] md:w-[3.5rem] lg:w-[7rem]"  key={item} src={item.image} alt={`${item}'s logo` }/>
                         ))}
                     </div>
                 </div>
