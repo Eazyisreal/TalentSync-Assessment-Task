@@ -37,14 +37,14 @@ export default function Choose() {
                     <h1 className="text-gray800 text-3xl md:text-5xl font-semibold font-inter">Why choose ClearLink?</h1>
                 </div>
                 <p className="font-inter text-[.75rem]  md:text-xl ">In a world where connection is everything, ClearLink takes the lead. Our <br /> cutting-edge video conferencing app offers:</p>
-                <img className=" hidden md:block absolute z-10  left-[61%]" src={handArrow} alt="" />
+                <img loading="lazy" className=" hidden md:block absolute z-10  left-[61%]" src={handArrow} alt="" />
             </div>
 
             <div className="flex flex-col lg:flex-row relative w-full justify-between gap-10 ">
                 <div className="grid grid-cols-2 gap-8 w-full ">
                     {textContainer.map((item) => (
                         <div key={item} className="flex flex-col gap-5">
-                            <img className="w-[4rem]" src={item.image} alt="Video recorder icon" />
+                            <img loading='lazy' className="w-[4rem]" src={item.image} alt="Video recorder icon" />
                             <div className="flex flex-col gap-2">
                                 <h2 className="font-inter text-gray900 md:text-xl font-semibold">{item.title}</h2>
                                 <p className="text-gray600 text-[.75rem] md:text-base font-inter">{item.text}</p>

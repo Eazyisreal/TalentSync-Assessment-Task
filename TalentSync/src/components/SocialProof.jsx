@@ -8,12 +8,12 @@ import Marvel from "../assets/images/Marvel.svg"
 import Shopify from "../assets/images/Shopify.svg"
 
 const logo =[
-    "Shopify",
-    "Coinbase",
-    "Dropbox",
-    "Intercom",
-    "Marvel",
-    "Automattic",
+    { image: Shopify},
+    { image: Coinbase},
+    { image: Dropbox},
+    { image: Intercom},
+    { image: Marvel},
+    { image: Automattic},
     
 ]
 export default function SocialProof() {
@@ -23,7 +23,7 @@ export default function SocialProof() {
                     <h1 className="text-gray600 text-center font-inter text-[.75rem] md:text-xl font-medium">Join 1,500+ companies already video conferencing the ClearLink way</h1>
                     <div className="flex md:items-center w-full gap-4 md:gap-[4.3125rem]">
                     {logo.map((item) => (
-                            <img className=" w-10 md:w-[2.5rem] lg:w-[7rem]"  key={item} src={eval(item)} alt={`${item}'s logo` }/>
+                            <img loading="lazy" className=" w-10 md:w-[2.5rem] lg:w-[7rem]"  key={item} src={item.image} alt={`${item}'s logo` }/>
                         ))}
                     </div>
                 </div>

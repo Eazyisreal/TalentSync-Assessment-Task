@@ -98,8 +98,8 @@ export default function Footer() {
                             <h2 className="text-blue700 font-inter font-semibold">Get the app</h2>
                             <div className="flex flex-col gap-4">
 
-                                <img className="w-[9rem]" src={Appstore} alt="Appstore Logo" />
-                                <img className="w-[9rem]" src={Playstore} alt="Playstore Logo" />
+                                <img  loading="lazy" className="w-[9rem]" src={Appstore} alt="Appstore Logo" />
+                                <img loading="lazy"  className="w-[9rem]" src={Playstore} alt="Playstore Logo" />
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ function SocialIcons() {
     return (
         <nav className="flex gap-6">
             {socialIcons.map((item) => (
-                <img key={item} src={item.image} alt={`${item}'s image`} />
+                <img loading="lazy" key={item} src={item.image} alt={`${item}'s image`} />
             ))}
         </nav>
     );

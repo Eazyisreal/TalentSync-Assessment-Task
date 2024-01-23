@@ -32,7 +32,7 @@ export default function Ready() {
                 </div>
             </div>
             <div className="flex w-full h-full">
-                <img src={ReadyImage} alt="Image of People Smiling during a video call" />
+                <img loading="lazy" src={ReadyImage} alt="Image of People Smiling during a video call" />
             </div>
         </section>
     )

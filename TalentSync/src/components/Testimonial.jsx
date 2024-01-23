@@ -29,22 +29,22 @@ export default function Testimonial() {
                             </clipPath>
                         </defs>
                     </svg>
-                    <img className="w-[6rem]" src={Stars} alt="stars" />
+                    <img loading="lazy" className="w-[6rem]" src={Stars} alt="stars" />
                     <p className="text-gray900 font-inter whitespace-nowrap font-medium text-2xl md:text-4xl leading-[1.3]">ClearLink has upgraded our <br /> remote meetings. High-quality <br /> video, screen sharing, and <br />top-notch security make it <br /> essential for our team.</p>
                     <div className="flex gap-3">
                         <div className="flex gap-4">
-                            <img src={Avatar} alt="Avatar" />
+                            <img loading="lazy" src={Avatar} alt="Avatar" />
                             <div className="flex flex-col gap-[.125rem]">
                                 <h3 className="text-gray900 font-inter md:text-xl font-semibold">Sarah Thompson</h3>
                                 <p className="text-gray600 font-inter text-[.75rem] md:text-[1.125rem]">Project Manager, Shopify</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
-                            <img src={ArrowLeft} alt="Arrow facinf left" /><img src={ArrowRight} alt="Arrow facing right" />
+                            <img loading="lazy" src={ArrowLeft} alt="Arrow facinf left" /><img src={ArrowRight} alt="Arrow facing right" />
                         </div>
                     </div>
                 </div>
-                <img className="w-full" src={Content} alt="Image of Several People" />
+                <img loading="lazy" className="w-full" src={Content} alt="Image of Several People" />
             </div>
         </section>
     )

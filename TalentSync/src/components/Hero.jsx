@@ -19,21 +19,21 @@ import VideoRecorder from "../assets/images/video-recorder.svg"
 import Woman from "../assets/images/woman.svg"
 
 const images= [
-    "Oldman",
-    "Lady",
-    "Man",
-    "Muslim",
-    "SmilingMan",
-    "Woman"
+    {image: Oldman},
+    {image: Lady},
+    {image: Man},
+    {image: Muslim},
+    {image: SmilingMan},
+    {image: Woman}
 ]
 
 const icons= [
-    "Mircophone",
-    "VideoRecorder",
-    "Monitor",
-    "Smiley",
-    "Message",
-    "Settings"
+    {image: Mircophone},
+    {image: VideoRecorder},
+    {image: Monitor},
+    {image: Smiley},
+    {image: Message},
+    {image: Settings}
 ]
 
 export default function Hero() {
@@ -69,10 +69,10 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
-                        <img src={Avatar} alt="Avatar group images" />
+                        <img loading="lazy" src={Avatar} alt="Avatar group images" />
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-2">
-                                <img src={Stars} alt="Stars images" />
+                                <img loading="lazy" src={Stars} alt="Stars images" />
                                 <p className="font-inter text-gray700 text-[.75rem] md:text-base font-semibold">5.0</p>
                             </div>
                             <p className="font-inter text-gray600 text-[.75rem] md:text-base font-medium">from 3,000+ reviews</p>
@@ -83,13 +83,13 @@ export default function Hero() {
                 <div className="flex p-4 md:p-8 flex-col w-full justify-center items-center gap-10 rounded-2xl border bg-blue50 border-blue200 shadow-2xl">
                     <div className="grid gap-3 grid-cols-3">
                         {images.map((item) => (
-                            <img key={item.id} src={eval(item)} alt={`${item}'s image` }/>
+                            <img loading="lazy" key={item.id} src={item.image} alt={`${item}'s image` }/>
                         ))}
                     </div>
 
                     <div className="flex md:gap-4">
                     {icons.map((icon) => (
-                            <img  key={icon.id} src={eval(icon)} alt={`${icon}'s image` }/>
+                            <img loading="lazy"  key={icon.id} src={icon.image} alt={`${icon}'s image` }/>
                         ))}
                     </div>
                 </div>
