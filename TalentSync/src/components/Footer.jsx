@@ -1,0 +1,186 @@
+import Playstore from "../assets/images/Playstore.svg"
+import Appstore from "../assets/images/Appstore.svg"
+
+const products = [
+    {
+        title: "Product",
+        items: [
+            { text: "Overview", path: "" },
+            { text: "Features", path: "" },
+            { text: "Solutions", path: "" },
+            { text: "Tutorials", path: "", },
+            { text: "Pricing", path: "" },
+        ],
+    },
+];
+
+
+const company = [
+    {
+        title: "Company",
+        items: [
+            { text: "About us", path: "" },
+            { text: "Careers", path: "" },
+            { text: "Press", path: "" },
+            { text: "News", path: "", },
+            { text: "Contact", path: "" },
+        ],
+    },
+];
+
+
+const resources = [
+    {
+        title: "Resources",
+        items: [
+            { text: "Blog", path: "" },
+            { text: "Events", path: "" },
+            { text: "Help centre", path: "" },
+            { text: "Tutorials", path: "", },
+            { text: "Support", path: "" },
+        ],
+    },
+];
+
+
+const legal = [
+    {
+        title: "Legal",
+        items: [
+            { text: "Terms", path: "" },
+            { text: "Privacy", path: "" },
+            { text: "Cookies", path: "" },
+            { text: "Licenses", path: "", },
+            { text: "Contact", path: "" },
+        ],
+    },
+];
+
+
+export default function Footer() {
+    return (
+        <footer className="flex flex-col lg:flex-row pt-[6rem] pb-[3rem] w-full lg:px-[2rem] px-4 gap-16 " >
+            <div className="flex flex-col lg:flex-row w-full justify-center gap-8 md:gap-[6.25rem]">
+                <div className="flex flex-col gap-8">
+                    <div className="flex items-center gap-[.625rem]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28" fill="none">
+                            <path d="M19.7058 16.9781L23.6024 13.0815C23.6024 10.4095 22.9344 7.84888 21.7098 5.62224L12.6362 14.0278V28H14.3619C20.4295 28 25.3837 23.1014 25.3837 16.9781H19.7058Z" fill="#1570EF" />
+                            <path d="M5.67793 11.0219L1.78131 14.9185C1.78131 17.5905 2.4493 20.1511 3.67396 22.3777L12.7475 13.9722V0H11.0219C4.95427 0 0 4.89861 0 11.0219H5.67793Z" fill="#53B1FD" />
+                        </svg>
+                        <h1 className="font-inter text-gray900 text-xl font-semibold">ClearLink <span className="text-blueDark400 ">.</span></h1>
+                    </div>
+                    <p className="text-gray600 font-inter md:text-[1.125rem] whitespace-nowrap">ClearLink is your gateway to effortless, high- <br />quality video conferencing. Join us in shaping <br /> the future of communication!</p>
+                </div>
+
+                <div className="grid w-full gap-8 grid-cols-2 lg:grid-cols-5">
+                    <Product />
+                    <Company />
+                    <Resources />
+                    <Legal />
+
+                    <div className="flex flex-col gap-4">
+                        <h2 className="text-blue700 font-inter font-semibold">Get the app</h2>
+                        <div className="flex flex-col gap-4">
+                          
+                            <img src={Appstore} alt="Appstore Logo" />
+                            <img src={Playstore} alt="Playstore Logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    )
+}
+
+
+
+function Product() {
+    return (
+        <>
+            {products.map((link, index) => (
+                <div className="flex flex-col gap-4" key={index}>
+                    <h2 className="text-gray500 font-inter font-semibold text-[.75rem] md:text-base">
+                        {link.title}
+                    </h2>
+                    <ul className="flex flex-col gap-4">
+                        {link.items.map((nav, i) => (
+                            <li className="text-gray800 font-inter md:text-[1.125rem] font-semibold" key={i}>
+                                {nav.text}
+                            </li>
+                        )
+                        )}
+                    </ul>
+                </div>
+            ))}
+        </>
+    )
+}
+
+
+
+function Company() {
+    return (
+        <>
+            {company.map((link, index) => (
+                <div className="flex flex-col gap-4" key={index}>
+                    <h2 className="text-gray500 font-inter font-semibold text-[.75rem] md:text-base">
+                        {link.title}
+                    </h2>
+                    <ul className="flex flex-col gap-4">
+                        {link.items.map((nav, i) => (
+                            <li className="text-gray800 font-inter md:text-[1.125rem] font-semibold" key={i}>
+                                {nav.text}
+                            </li>
+                        )
+                        )}
+                    </ul>
+                </div>
+            ))}
+        </>
+    )
+}
+
+
+function Resources() {
+    return (
+        <>
+            {resources.map((link, index) => (
+                <div className="flex flex-col gap-4" key={index}>
+                    <h2 className="text-gray500 font-inter font-semibold text-[.75rem] md:text-base">
+                        {link.title}
+                    </h2>
+                    <ul className="flex flex-col gap-4">
+                        {link.items.map((nav, i) => (
+                            <li className="text-gray800 font-inter md:text-[1.125rem] font-semibold" key={i}>
+                                {nav.text}
+                            </li>
+                        )
+                        )}
+                    </ul>
+                </div>
+            ))}
+        </>
+    )
+}
+
+function Legal() {
+    return (
+        <>
+            {legal.map((link, index) => (
+                <div className="flex flex-col gap-4" key={index}>
+                    <h2 className="text-gray500 font-inter font-semibold text-[.75rem] md:text-base">
+                        {link.title}
+                    </h2>
+                    <ul className="flex flex-col gap-4">
+                        {link.items.map((nav, i) => (
+                            <li className="text-gray800 font-inter md:text-[1.125rem] font-semibold" key={i}>
+                                {nav.text}
+                            </li>
+                        )
+                        )}
+                    </ul>
+                </div>
+            ))}
+        </>
+    )
+}

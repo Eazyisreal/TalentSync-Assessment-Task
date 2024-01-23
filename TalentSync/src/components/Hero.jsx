@@ -38,7 +38,7 @@ const icons= [
 
 export default function Hero() {
     return (
-        <section className="flex pt-[2.5rem] pb-[6rem] w-full lg:px-[2rem] px-4 flex-col items-center h-full gap-[10rem]" style={{
+        <section className="flex pt-[2.5rem] md:pb-[6rem] w-full lg:px-[2rem] px-4 flex-col items-center h-full gap-12 md:gap-[10rem]" style={{
             background: `url(${Background})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -48,12 +48,12 @@ export default function Hero() {
             <div className="flex flex-col lg:flex-row w-full gap-10 items-center">
                 <div className="flex flex-col w-full gap-10">
                     <div className="flex flex-col gap-6">
-                        <h2 className="font-inter text-gray800 text-6xl font-semibold whitespace-nowrap  tracking-tight">Uniting the world, <br />one video call at a time</h2>
-                        <p className="text-gray500 text-xl font-inter">Experience the future of communication with ClearLink – <br /> where crystal-clear video conferencing meets <br /> unparalleled simplicity.</p>
+                        <h2 className="font-inter text-gray800 text-3xl md:text-6xl font-semibold whitespace-nowrap  tracking-tight">Uniting the world, <br />one video call at a time</h2>
+                        <p className="text-gray500 text-[.75rem] whitespace-nowrap md:text-xl font-inter">Experience the future of communication with ClearLink – <br /> where crystal-clear video conferencing meets <br /> unparalleled simplicity.</p>
                     </div>
 
                     <div className="flex items-center gap-5">
-                        <Button buttonText='Start your free trial' addtionalClassName='bg-blue700 text-white font-inter text-[1.125rem] font-semibold' />
+                        <Button buttonText='Start your free trial' addtionalClassName='bg-blue700 text-white font-inter text-[.75rem] md:text-[1.125rem] font-semibold' />
                         <div className="flex items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M10.1055 17.6576C8.76001 17.6577 7.43546 17.6614 6.11094 17.6564C5.47164 17.654 4.86811 17.5139 4.3315 17.1442C3.56327 16.6149 3.12949 15.8887 3.01861 14.9621C2.98113 14.6488 2.98556 14.3362 2.98539 14.0229C2.98425 11.9455 2.98131 9.86806 2.98695 7.79064C2.9886 7.18281 3.10841 6.59641 3.44285 6.07727C4.00967 5.19738 4.81401 4.70243 5.86856 4.66999C6.59987 4.64749 7.33238 4.66512 8.06434 4.66161C8.37756 4.6601 8.69078 4.64441 9.0039 4.6469C9.16936 4.64822 9.21906 4.58032 9.21747 4.42089C9.21122 3.79354 9.21224 3.16607 9.21681 2.53869C9.22015 2.08077 9.41712 1.79829 9.79064 1.69542C10.222 1.57662 10.6529 1.83667 10.7401 2.27491C10.7644 2.39695 10.7766 2.52328 10.7775 2.64776C10.7815 3.21937 10.7867 3.79116 10.7759 4.3626C10.7721 4.56333 10.8208 4.64295 11.0403 4.64938C12.0371 4.67858 13.0339 4.64762 14.0305 4.66484C15.3009 4.6868 16.3239 5.39259 16.7939 6.57421C16.9078 6.86043 16.9722 7.16212 16.98 7.47028C17.0425 9.92365 16.991 12.3772 16.9749 14.8305C16.9655 16.2594 15.7609 17.4917 14.3282 17.6275C14.0915 17.6499 13.8558 17.6583 13.6189 17.6582C12.4547 17.6579 11.2906 17.6578 10.1055 17.6576ZM5.95679 6.19887C5.14194 6.25783 4.57093 6.84107 4.55078 7.65545C4.53751 8.19192 4.54734 8.72896 4.54713 9.26574C4.54644 11.0225 4.54337 12.7793 4.54632 14.5361C4.54786 15.4586 5.12844 16.0894 6.01631 16.0928C8.66539 16.1031 11.3146 16.1029 13.9636 16.0923C14.8449 16.0887 15.4486 15.4534 15.4496 14.5693C15.4523 12.2967 15.4527 10.024 15.4494 7.75133C15.4481 6.8244 14.8263 6.1986 13.9013 6.19743C11.2661 6.19409 8.63095 6.19711 5.95679 6.19887Z" fill="#175CD3" />
@@ -65,7 +65,7 @@ export default function Hero() {
                                 <path d="M9.77294 14.6532C9.65486 14.6525 9.55709 14.6565 9.45998 14.6503C9.17661 14.6322 8.98073 14.4296 8.97101 14.1498C8.96179 13.8846 9.16262 13.6401 9.43681 13.6281C9.80504 13.612 10.1753 13.6106 10.5433 13.6301C10.8481 13.6463 11.008 13.8553 10.9992 14.1683C10.9912 14.4517 10.8016 14.6412 10.5037 14.6505C10.2672 14.6579 10.0303 14.6528 9.77294 14.6532Z" fill="#175CD3" />
                                 <path d="M13.8357 13.7487C14.0108 13.9437 14.0597 14.1501 13.9485 14.3765C13.8386 14.6 13.6396 14.6576 13.4073 14.6539C13.1076 14.6492 12.8078 14.6556 12.5081 14.6515C12.1741 14.6469 11.975 14.4518 11.9756 14.1381C11.9762 13.8311 12.1822 13.6279 12.5105 13.6224C12.8241 13.6172 13.1379 13.6218 13.4516 13.6217C13.5878 13.6217 13.7139 13.6529 13.8357 13.7487Z" fill="#175CD3" />
                             </svg>
-                            <p className="text-blue700 font-inter text-[1.125rem] font-semibold">Discover AI assistant</p>
+                            <p className="text-blue700 font-inter text-[.75rem] whitespace-nowrape md:text-[1.125rem] font-semibold">Discover AI assistant</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4">
@@ -73,23 +73,23 @@ export default function Hero() {
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-2">
                                 <img src={Stars} alt="Stars images" />
-                                <p className="font-inter text-gray700 font-semibold">5.0</p>
+                                <p className="font-inter text-gray700 text-[.75rem] md:text-base font-semibold">5.0</p>
                             </div>
-                            <p className="font-inter text-gray600 font-medium">from 3,000+ reviews</p>
+                            <p className="font-inter text-gray600 text-[.75rem] md:text-base font-medium">from 3,000+ reviews</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="flex p-8 flex-col w-full justify-center items-center gap-10 rounded-2xl border bg-blue50 border-blue200 shadow-2xl">
+                <div className="flex p-4 md:p-8 flex-col w-full justify-center items-center gap-10 rounded-2xl border bg-blue50 border-blue200 shadow-2xl">
                     <div className="grid gap-3 grid-cols-3">
                         {images.map((item) => (
-                            <img key={item} src={eval(item)} alt={`${item}'s image` }/>
+                            <img key={item.id} src={eval(item)} alt={`${item}'s image` }/>
                         ))}
                     </div>
 
-                    <div className="flex gap-4">
-                    {icons.map((item) => (
-                            <img  key={item} src={eval(item)} alt={`${item}'s image` }/>
+                    <div className="flex md:gap-4">
+                    {icons.map((icon) => (
+                            <img  key={icon.id} src={eval(icon)} alt={`${icon}'s image` }/>
                         ))}
                     </div>
                 </div>

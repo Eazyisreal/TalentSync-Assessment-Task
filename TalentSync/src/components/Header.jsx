@@ -15,19 +15,19 @@ export default function Header() {
                 <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
                     Products
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
-                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </l1>
                 <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
                     Solutions
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
-                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </l1>
                 <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
                     Resources
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
-                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                        <path d="M5.19183 6.75L9.69183 11.25L14.1918 6.75" stroke="#667085" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </l1>
                 <l1 className="flex items-center gap-[.375rem] font-inter font-semibold text-[1.125rem] text-gray500">
